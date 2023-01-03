@@ -1,48 +1,149 @@
 <!DOCTYPE html>
-<html>
- 
-<head>
-    <title>Jay's example 1</title>
-    <link rel="Icon" href="Images/cloud1.png">
-    <style>
-        p {
-            color: skyblue;
-        }
+    <html>
+
+        <head>
+            <title>Motorcycles 2022</title>
+            <link rel="Icon" href="Images/icon.jpg">
+            <link rel="stylesheet" href="stylesheet.css">
+        </head>
+
+        <header id="nav">
+            <a href="https://www.yamaha-motor.com.ph/motorcycle" target="_blank">
+                <img src="Images/yamaha.png" height="90"></a>
+            <a href="https://mc.suzuki.com.ph/" target="_blank">
+                <img src="Images/suzuki.png" height="90"></a>
+            <a href="https://www.hondaph.com/" target="_blank">
+                <img src="Images/honda.png" height="90"></a>
+            <a href="https://www.kawasaki.ph/" target="_blank">
+                <img src="Images/kawasaki.png" height="90"></a>
+            <a href="https://kymco.com.ph/" target="_blank">
+                <img src="Images/kymco.jpg" height="90"></a>
+            <a href="https://ktmphilippines.com/" target="_blank">
+                <img src="Images/ktm.jpg" height="90"></a>
+            <a href="https://www.bristol-motorcycles.com/" target="_blank">
+                <img src="Images/bristol.png" height="90"></a>
+            <a href="http://www.cfmoto.ph/" target="_blank">
+                <img src="Images/cfmoto.jpg" height="90"></a>
+            <a href="https://www.sym-global.com/bike-36" target="_blank">
+                <img src="Images/sym.jpg" height="90"></a>
+        <br>
+        </header>
         
-        p {
-            font-size: 16px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-            font-style: oblique;
-            font-variant: small-caps;
+        <body>
+            <table>
+                <div class="mc">
+                    <h2>Best selling motorcycles in 2022</h2>
+                    <ol class="list">
+                        <li>Honda Click 125i</li>
+                        <li>Yamaha Aerox 155</li>
+                        <li>Yamaha Nmax</li>
+                        <li>Honda PCX160</li>
+                        <li>Yamaha Sniper 155</li>
+                        <li>Bristol Classic 400i </li>
+                        <li>Kawasaki Dominar 400</li>
+                        <li>Yamaha Mio i 125</li>
+                        <li>Honda BeAT</li>
+                        <li>Yamaha Xmax</li>
+                    </ol>
+                </div>
+            </table>
+
+            <form action="process.php" method="post">
+                <h2>For sample computation please fill out the form:</h2>
+                <div class="selection">
+                <div>    
+                <strong>                  
+                <label>BRAND:
+                    <select id="Brands">
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="Kymco">Kymco</option>
+                        <option value="KTM">KTM</option>
+                        <option value="Bristol">Bristol</option>
+                        <option value="CFMoto">CFMoto</option>
+                        <option value="Sym">Sym</option>
+                    </select>
+                </label>
+                </div>   
+                <br>
+
+                <label>Model:
+                    <datalist id="Model">
+                        <option value="Honda Click 125i">Honda</option>
+                        <option value="Aerox 155">Yamaha</option>
+                        <option value="Nmax">Yamaha</option>
+                        <option value="PCX160">Honda</option>
+                        <option value="Sniper 155">Yamaha</option>
+                        <option value="Classic 400i">Bristol</option>
+                        <option value="Mio i125">Yamaha</option>
+                        <option value="BeAT">Honda</option>
+                        <option value="Xmax">Yamaha</option>
+                    </datalist>
+
+                <input type="text" name="Model" list="Model" placeholder="Motorcycle model" id="mModels">
+                <br>
+                </label>
+                    <div>   
+                    <br>
+                        <label for="firstName">First Name</label>
+                        <input type="text" name="firstName" placeholder="First name"
+                        id="firstName">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" name="lastName" placeholder="Last name"
+                        id="lastName">
+                    </div>     
+                    <div>
+                        <br>
+                        <label for="residentialAddress">Residential Address</label>
+                        <input type="text" name="residentialAddress" placeholder="Residential address"
+                        id="residentialAddress">
+                    </div>    
+                    <div>
+                        <br>
+                        <label for="Email address">Email Address</label>
+                        <input type="email" name="Email address" placeholder="Email address"
+                        id="EmailAddress">
+                    </div>
+                    <div>
+                        <br>
+                        <label for="contactNumber">Contact Number</label>
+                        <input type="number" name="contactNumber" placeholder="Contact number"
+                        id="contactNumber">
+                    </div>
+                    <br>
+                </div>
+                        <input type="submit" name="Submit request">   
+            </strong>
+            </form>
+            <br>
+
+            <div class="mainlink">
+                <li class="link">
+                    <a href="https://www.facebook.com/imjayesguerra/"
+                        target="_blank"> <img src="Images/facebook.png" height="35">
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="https://www.linkedin.com/in/john-ray-esguerra-805186231/"
+                        target="_blank"> <img src="Images/linkedin.png" height="35">
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="http://esguerratechnology.com/"
+                        target="_blank"> <img src="Images/arctic.png" height="35">
+                    </a>
+                </li>
+            </div>
+            </form>
+
+            <footer>
+                Copyright &copy; 2022    
+            </footer>
             
-        }
-        
-        #one {
-            color: blue;
-            text-align: center;
-            padding: 50px;
-            border: dotted navy;
-            margin: 50px;
-        }
-    </style>
-</head>
- 
-<body>
-    <p>Test Text 1</p>
-    <p>Test Text 2</p>
-    <p>Test Text 3</p>
-    <p>Test Text 4</p>
-    <div>
-        <div id="one">Test1</div>
-        <div id="one">Test2</div>
-    </div>
-    <br>
-</body>
- <footer>
-    <a href="https://www.facebook.com/imjayesguerra/" target="_blank">
-            <img src="Images/facebook.png" height="25">
-    <a href="https://www.linkedin.com/in/john-ray-esguerra-805186231/" target="_blank">
-            <img src="Images/linkedin.png" height="25">
- </footer>
-</html>
+        </body>
+    </html>
