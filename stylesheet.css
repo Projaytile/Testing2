@@ -1,0 +1,88 @@
+header {
+    position: relative;
+}
+
+.mc {
+    background-color: lightblue;
+    text-align: center;
+    border: solid black 3px;  
+    padding: 5px;
+    margin: 1px;  
+}
+.list
+{
+ text-align: center;
+ list-style-position: inside;
+}
+
+ol.list
+{
+ text-align: left;
+ margin-left: 45%;
+
+}
+
+form {
+    background-color: lightblue;
+    list-style-position: inside;
+    text-align: center;
+    border: solid black 3px;  
+    padding: 5px;
+    margin: 1px;  
+}
+
+footer {
+    margin-top: 1px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center; 
+}
+
+.link {
+    display: inline-block;
+
+}
+.mainlink {
+    margin-top: 150px;
+    position: relative;
+    right: 0;
+    bottom: 25px;
+    left: 0;
+    padding: 10px;
+    text-align: center; 
+}
+.selection {
+    text-align: left;
+    position: static;
+    margin-left: 40%;
+}
+input {
+    text-align: center;
+}
+#Brands {
+    margin-left: 109px;
+}
+#mModels {
+    margin-left: 123px;
+}
+#firstName {
+    margin-left: 95px;
+}
+#lastName {
+    margin-left: 97px;
+}
+#residentialAddress {
+    margin-left: 36px;
+}
+#EmailAddress {
+    margin-left: 72px;
+}
+#contactNumber {
+    margin-left: 57px;
+}
+#Brands, #mModels, #firstName, #lastName, #residentialAddress, #EmailAddress, #contactNumber {
+    text-align: left;
+}
