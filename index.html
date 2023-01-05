@@ -30,31 +30,36 @@
         </header>
         
         <body>
+            <div class="container">
             <table>
-                <div class="mc">
+                <div class="box-1">
                     <h2>Best selling motorcycles in 2022</h2>
-                    <ol class="list">
-                        <li>Honda Click 125i</li>
-                        <li>Yamaha Aerox 155</li>
+                    <ol>
+                        <li>Honda Click</li>
+                        <li>Yamaha Aerox</li>
                         <li>Yamaha Nmax</li>
-                        <li>Honda PCX160</li>
-                        <li>Yamaha Sniper 155</li>
-                        <li>Bristol Classic 400i </li>
-                        <li>Kawasaki Dominar 400</li>
-                        <li>Yamaha Mio i 125</li>
+                        <li>Honda PCX</li>
+                        <li>Yamaha Sniper</li>
+                        <li>Bristol Classic</li>
+                        <li>Kawasaki Dominar</li>
+                        <li>Yamaha Mio</li>
                         <li>Honda BeAT</li>
                         <li>Yamaha Xmax</li>
                     </ol>
                 </div>
             </table>
-
+            <br>
             <form action="process.php" method="post">
+                <div class="box-2">
+                
                 <h2>For sample computation please fill out the form:</h2>
-                <div class="selection">
-                <div>    
-                <strong>                  
-                <label>BRAND:
-                    <select id="Brands">
+                <div class="reqinfo">
+                <div>
+                <strong>
+                
+                <label>Brand:
+                    <span class="brandinfo">
+                    <select>
                         <option value="Yamaha">Yamaha</option>
                         <option value="Suzuki">Suzuki</option>
                         <option value="Honda">Honda</option>
@@ -65,11 +70,15 @@
                         <option value="CFMoto">CFMoto</option>
                         <option value="Sym">Sym</option>
                     </select>
+                </span>
                 </label>
-                </div>   
+           
+                </div>
+                <div>
                 <br>
 
                 <label>Model:
+                    <span class="modelinfo">
                     <datalist id="Model">
                         <option value="Honda Click 125i">Honda</option>
                         <option value="Aerox 155">Yamaha</option>
@@ -82,58 +91,83 @@
                         <option value="Xmax">Yamaha</option>
                     </datalist>
 
-                <input type="text" name="Model" list="Model" placeholder="Motorcycle model" id="mModels">
+                <input type="text" name="Model" list="Model" placeholder="Model" 
+                id="mModels" size="10px">
+                </span>
                 <br>
                 </label>
+                </div>
                     <div>   
                     <br>
-                        <label for="firstName">First Name</label>
+                        <label for="firstName">First Name:
+                        <span class="fninfo">
+                        
                         <input type="text" name="firstName" placeholder="First name"
-                        id="firstName">
+                        id="firstName"size="10px">
+                        </span>
+                    </label>
                     </div>
                     <div>
                         <br>
-                        <label for="lastName">Last Name</label>
+                        <label for="lastName">Last Name:
+                        <span class="lninfo">
                         <input type="text" name="lastName" placeholder="Last name"
-                        id="lastName">
+                        id="lastName" size="10px">
+                    </span>
+                    </label>
                     </div>     
                     <div>
                         <br>
-                        <label for="residentialAddress">Residential Address</label>
+                        <label for="residentialAddress">Residential Address:
+                        <span class="resinfo">
+                        
                         <input type="text" name="residentialAddress" placeholder="Residential address"
-                        id="residentialAddress">
+                        id="residentialAddress" size="10px">
+                       
+                    </span>
+                </label>
                     </div>    
                     <div>
                         <br>
-                        <label for="Email address">Email Address</label>
+                        <label for="Email address">Email Address:
+                        <span class="eminfo">
                         <input type="email" name="Email address" placeholder="Email address"
-                        id="EmailAddress">
+                        id="EmailAddress" size="10px">
+                    </span>
+                    </label>
                     </div>
                     <div>
                         <br>
-                        <label for="contactNumber">Contact Number</label>
-                        <input type="number" name="contactNumber" placeholder="Contact number"
-                        id="contactNumber">
+                        <label for="contactNumber">Contact Number:
+                            <span class="coinfo">
+                        <input type="text" name="contactNumber" placeholder="Contact number"
+                        id="contactNumber" size="10px">
+                    </span>
+                    </label>
                     </div>
                     <br>
                 </div>
-                        <input type="submit" name="Submit request">   
+                        <div class="submit">
+                        <input type="submit" name="Submit request">
+                        </div>   
             </strong>
+            </div>
             </form>
             <br>
+            </div>
 
-            <div class="mainlink">
-                <li class="link">
+            <div class="box-3">
+                <li class="socmedlink">
                     <a href="https://www.facebook.com/imjayesguerra/"
                         target="_blank"> <img src="Images/facebook.png" height="35">
                     </a>
                 </li>
-                <li class="link">
+                <li class="socmedlink">
                     <a href="https://www.linkedin.com/in/john-ray-esguerra-805186231/"
                         target="_blank"> <img src="Images/linkedin.png" height="35">
                     </a>
                 </li>
-                <li class="link">
+                <li class="socmedlink">
                     <a href="http://esguerratechnology.com/"
                         target="_blank"> <img src="Images/arctic.png" height="35">
                     </a>
