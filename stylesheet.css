@@ -1,34 +1,71 @@
 header {
-    position: relative;
-}
-
-.mc {
-    background-color: lightblue;
-    text-align: center;
-    border: solid black 3px;  
-    padding: 5px;
-    margin: 1px;  
-}
-.list
-{
- text-align: center;
- list-style-position: inside;
-}
-
-ol.list
-{
- text-align: left;
- margin-left: 45%;
-
-}
-
-form {
-    background-color: lightblue;
     list-style-position: inside;
+}
+
+.container {
+    width: 99%;
+    margin: auto;
+}
+
+.box-1 {
+    background-color: lightblue;
+    border: 2px black solid;  
+    border-radius: 5px;
+    padding: 0;
+    width: 99%;
+    margin: auto;
+    text-align: left;
+}
+
+.box-1 h2 {
+    text-align: left;
+    padding-top: 5px;
+    margin-left: 35%;
+}
+
+.box-1 ol {
+    text-align: left;
+    list-style-position: inside;
+}
+
+.box-1 li {
+    text-align: left;
+    padding-top: 5px;
+    margin-left: 40%;
+}
+
+.box-2 h2 {
+    text-align: left;
+    padding-top: 5px;
+    margin-left: 35%;
+}
+
+.box-2 {
+    background-color: lightblue;
+    border: 2px black solid;  
+    border-radius: 5px;
+    padding: 0;
+    width: 99%;
+    margin: auto;
+    text-align: left;
+}
+
+.reqinfo {
+    text-align: left;
+    padding-top: 5px;
+    position: absolute;
+    left: 40%;
+}
+
+.brandinfo, .modelinfo, .fninfo, .lninfo, .resinfo, .eminfo, .coinfo  {
+    text-align: left;
+    position: absolute;
+    left: 105%;
+}
+
+.submit {
+    padding: 250px 0 15px 0;
     text-align: center;
-    border: solid black 3px;  
-    padding: 5px;
-    margin: 1px;  
 }
 
 footer {
@@ -41,48 +78,21 @@ footer {
     text-align: center; 
 }
 
-.link {
+.socmedlink {
     display: inline-block;
 
 }
-.mainlink {
+.box-3 {
     margin-top: 150px;
     position: relative;
     right: 0;
     bottom: 25px;
     left: 0;
     padding: 10px;
-    text-align: center; 
-}
-.selection {
-    text-align: left;
-    position: static;
-    margin-left: 40%;
-}
-input {
     text-align: center;
 }
-#Brands {
-    margin-left: 109px;
+
+.box-3 label {
+    text-align: center;
 }
-#mModels {
-    margin-left: 123px;
-}
-#firstName {
-    margin-left: 95px;
-}
-#lastName {
-    margin-left: 97px;
-}
-#residentialAddress {
-    margin-left: 36px;
-}
-#EmailAddress {
-    margin-left: 72px;
-}
-#contactNumber {
-    margin-left: 57px;
-}
-#Brands, #mModels, #firstName, #lastName, #residentialAddress, #EmailAddress, #contactNumber {
-    text-align: left;
-}
+
