@@ -1,98 +1,183 @@
-header {
-    list-style-position: inside;
-}
+<!DOCTYPE html>
+    <html>
 
-.container {
-    width: 99%;
-    margin: auto;
-}
+        <head>
+            <title>Motorcycles 2022</title>
+            <link rel="Icon" href="Images/icon.jpg">
+            <link rel="stylesheet" href="stylesheet.css">
+        </head>
 
-.box-1 {
-    background-color: lightblue;
-    border: 2px black solid;  
-    border-radius: 5px;
-    padding: 0;
-    width: 99%;
-    margin: auto;
-    text-align: left;
-}
+        <header id="nav">
+            <a href="https://www.yamaha-motor.com.ph/motorcycle" target="_blank">
+                <img src="Images/yamaha.png" height="90"></a>
+            <a href="https://mc.suzuki.com.ph/" target="_blank">
+                <img src="Images/suzuki.png" height="90"></a>
+            <a href="https://www.hondaph.com/" target="_blank">
+                <img src="Images/honda.png" height="90"></a>
+            <a href="https://www.kawasaki.ph/" target="_blank">
+                <img src="Images/kawasaki.png" height="90"></a>
+            <a href="https://kymco.com.ph/" target="_blank">
+                <img src="Images/kymco.jpg" height="90"></a>
+            <a href="https://ktmphilippines.com/" target="_blank">
+                <img src="Images/ktm.jpg" height="90"></a>
+            <a href="https://www.bristol-motorcycles.com/" target="_blank">
+                <img src="Images/bristol.png" height="90"></a>
+            <a href="http://www.cfmoto.ph/" target="_blank">
+                <img src="Images/cfmoto.jpg" height="90"></a>
+            <a href="https://www.sym-global.com/bike-36" target="_blank">
+                <img src="Images/sym.jpg" height="90"></a>
+        <br>
+        </header>
+        
+        <body>
+            <div class="container">
+            <table>
+                <div class="box-1">
+                    <h2>Best selling motorcycles in 2022</h2>
+                    <ol>
+                        <li>Honda Click</li>
+                        <li>Yamaha Aerox</li>
+                        <li>Yamaha Nmax</li>
+                        <li>Honda PCX</li>
+                        <li>Yamaha Sniper</li>
+                        <li>Bristol Classic</li>
+                        <li>Kawasaki Dominar</li>
+                        <li>Yamaha Mio</li>
+                        <li>Honda BeAT</li>
+                        <li>Yamaha Xmax</li>
+                    </ol>
+                </div>
+            </table>
+            <br>
+            <form action="process.php" method="post">
+                <div class="box-2">
+                
+                <h2>For sample computation please fill out the form:</h2>
+                <div class="reqinfo">
+                <div>
+                <strong>
+                
+                <label>Brand:
+                    <span class="brandinfo">
+                    <select>
+                        <option value="Yamaha">Yamaha</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Kawasaki">Kawasaki</option>
+                        <option value="Kymco">Kymco</option>
+                        <option value="KTM">KTM</option>
+                        <option value="Bristol">Bristol</option>
+                        <option value="CFMoto">CFMoto</option>
+                        <option value="Sym">Sym</option>
+                    </select>
+                </span>
+                </label>
+           
+                </div>
+                <div>
+                <br>
 
-.box-1 h2 {
-    text-align: left;
-    padding-top: 5px;
-    margin-left: 35%;
-}
+                <label>Model:
+                    <span class="modelinfo">
+                    <datalist id="Model">
+                        <option value="Honda Click 125i">Honda</option>
+                        <option value="Aerox 155">Yamaha</option>
+                        <option value="Nmax">Yamaha</option>
+                        <option value="PCX160">Honda</option>
+                        <option value="Sniper 155">Yamaha</option>
+                        <option value="Classic 400i">Bristol</option>
+                        <option value="Mio i125">Yamaha</option>
+                        <option value="BeAT">Honda</option>
+                        <option value="Xmax">Yamaha</option>
+                    </datalist>
 
-.box-1 ol {
-    text-align: left;
-    list-style-position: inside;
-}
+                <input type="text" name="Model" list="Model" placeholder="Model" 
+                id="mModels" size="10px">
+                </span>
+                <br>
+                </label>
+                </div>
+                    <div>   
+                    <br>
+                        <label for="firstName">First Name:
+                        <span class="fninfo">
+                        
+                        <input type="text" name="firstName" placeholder="First name"
+                        id="firstName"size="10px">
+                        </span>
+                    </label>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="lastName">Last Name:
+                        <span class="lninfo">
+                        <input type="text" name="lastName" placeholder="Last name"
+                        id="lastName" size="10px">
+                    </span>
+                    </label>
+                    </div>     
+                    <div>
+                        <br>
+                        <label for="residentialAddress">Residential Address:
+                        <span class="resinfo">
+                        
+                        <input type="text" name="residentialAddress" placeholder="Residential address"
+                        id="residentialAddress" size="10px">
+                       
+                    </span>
+                </label>
+                    </div>    
+                    <div>
+                        <br>
+                        <label for="Email address">Email Address:
+                        <span class="eminfo">
+                        <input type="email" name="Email address" placeholder="Email address"
+                        id="EmailAddress" size="10px">
+                    </span>
+                    </label>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="contactNumber">Contact Number:
+                            <span class="coinfo">
+                        <input type="text" name="contactNumber" placeholder="Contact number"
+                        id="contactNumber" size="10px">
+                    </span>
+                    </label>
+                    </div>
+                    <br>
+                </div>
+                        <div class="submit">
+                        <input type="submit" name="Submit request">
+                        </div>   
+            </strong>
+            </div>
+            </form>
+            <br>
+            </div>
 
-.box-1 li {
-    text-align: left;
-    padding-top: 5px;
-    margin-left: 40%;
-}
+            <div class="box-3">
+                <li class="socmedlink">
+                    <a href="https://www.facebook.com/imjayesguerra/"
+                        target="_blank"> <img src="Images/facebook.png" height="35">
+                    </a>
+                </li>
+                <li class="socmedlink">
+                    <a href="https://www.linkedin.com/in/john-ray-esguerra-805186231/"
+                        target="_blank"> <img src="Images/linkedin.png" height="35">
+                    </a>
+                </li>
+                <li class="socmedlink">
+                    <a href="http://esguerratechnology.com/"
+                        target="_blank"> <img src="Images/arctic.png" height="35">
+                    </a>
+                </li>
+            </div>
+            </form>
 
-.box-2 h2 {
-    text-align: left;
-    padding-top: 5px;
-    margin-left: 35%;
-}
-
-.box-2 {
-    background-color: lightblue;
-    border: 2px black solid;  
-    border-radius: 5px;
-    padding: 0;
-    width: 99%;
-    margin: auto;
-    text-align: left;
-}
-
-.reqinfo {
-    text-align: left;
-    padding-top: 5px;
-    position: absolute;
-    left: 40%;
-}
-
-.brandinfo, .modelinfo, .fninfo, .lninfo, .resinfo, .eminfo, .coinfo  {
-    text-align: left;
-    position: absolute;
-    left: 105%;
-}
-
-.submit {
-    padding: 250px 0 15px 0;
-    text-align: center;
-}
-
-footer {
-    margin-top: 1px;
-    position: relative;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    text-align: center; 
-}
-
-.socmedlink {
-    display: inline-block;
-
-}
-.box-3 {
-    margin-top: 150px;
-    position: relative;
-    right: 0;
-    bottom: 25px;
-    left: 0;
-    padding: 10px;
-    text-align: center;
-}
-
-.box-3 label {
-    text-align: center;
-}
-
+            <footer>
+                Copyright &copy; 2022    
+            </footer>
+            
+        </body>
+    </html>
