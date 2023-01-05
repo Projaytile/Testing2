@@ -20,7 +20,8 @@ header {
 .box-1 h2 {
     text-align: left;
     padding-top: 5px;
-    margin-left: 35%;
+    width: 330px;
+    margin: auto;
 }
 
 .box-1 ol {
@@ -31,13 +32,16 @@ header {
 .box-1 li {
     text-align: left;
     padding-top: 5px;
-    margin-left: 40%;
+    width: 160px;
+    margin: auto;
 }
 
 .box-2 h2 {
     text-align: left;
     padding-top: 5px;
-    margin-left: 35%;
+    padding-bottom: 10px;
+    width: 330px;
+    margin: auto;
 }
 
 .box-2 {
@@ -52,19 +56,23 @@ header {
 
 .reqinfo {
     text-align: left;
-    padding-top: 5px;
-    position: absolute;
-    left: 40%;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .brandinfo, .modelinfo, .fninfo, .lninfo, .resinfo, .eminfo, .coinfo  {
-    text-align: left;
+    float: right;
     position: absolute;
-    left: 105%;
+    left: 52%;
+}
+
+select {
+    width: 107px;
 }
 
 .submit {
-    padding: 280px 0 15px 0;
+    padding: 10px 0 15px 0;
     text-align: center;
 }
 
