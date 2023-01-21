@@ -31,13 +31,16 @@ body {
     margin: auto;
     text-align: left;
     background-color: transparent;
+    font-size: 22px;
 }
 
 .box-1 h2 {
-    text-align: left;
+    text-align: center;
     padding-top: 5px;
-    width: 330px;
+    width: 390px;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .box-1 ol {
@@ -48,16 +51,18 @@ body {
 .box-1 li {
     text-align: left;
     padding-top: 5px;
-    width: 160px;
+    width: 200px;
     margin: auto;
 }
 
 .box-2 h2 {
-    text-align: left;
+    text-align: center;
     padding-top: 5px;
     padding-bottom: 10px;
     width: 330px;
     margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .box-2 {
@@ -71,11 +76,12 @@ body {
     width: 99%;
     margin: auto;
     text-align: left;
+    font-size: 22px;
 }
 
 .reqinfo {
     text-align: left;
-    width: 200px;
+    width: 250px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -83,7 +89,7 @@ body {
 .brandinfo, .modelinfo, .fninfo, .lninfo, .resinfo, .eminfo, .coinfo  {
     float: right;
     position: absolute;
-    left: 52%;
+    left: 55%;
 }
 
 select {
@@ -103,6 +109,9 @@ footer {
     left: 0;
     padding: 10px;
     text-align: center; 
+    color: whitesmoke;
+    border: 1px black solid;  
+    border-radius: 5px;
 }
 
 .socmedlink {
