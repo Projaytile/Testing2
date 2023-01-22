@@ -9,14 +9,22 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+#navbarlink {
+    width: 100%;
+    min-width: 200px;
+    max-width: 20px;
+    display: inline;
+
+}
+
 #navbar ul { 
     text-align: center;
-    padding: none;
-    margin: none;
+    
 }
 
 #navbar li {
-    display: inline; 
+    display: inline;
     text-align: center;   
 }
 
