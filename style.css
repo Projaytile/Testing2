@@ -1,6 +1,7 @@
 .container {
     width: 99%;
     margin: auto;
+    background: azure;
 }
 
 body {
